@@ -1,5 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 import sweeper.Box;
 import sweeper.Coord;
 import sweeper.Game;
@@ -12,9 +15,12 @@ public class MineSweeper extends JFrame {
 
 
     private JPanel  panel;
+    private JLabel label;
+
     private final int COLLS = 9;
     private final int ROWS=9;
     private final int IMAGE_SIZE=50;
+    private final int BOMBS = 10;
 
     public static void main(String[] args) {
         new MineSweeper().setVisible(true);
@@ -22,12 +28,19 @@ public class MineSweeper extends JFrame {
 
     private MineSweeper() {
 
-        game = new Game (COLLS,ROWS);
+        game = new Game (COLLS, ROWS, BOMBS);
         game.start();
 
         setImages();
+        initLabel();
         initPanel();
         initFrame();
+    }
+
+    private void initLabel ()
+    {
+        label = new JLabel("Welcome!!!");
+        add (label, BorderLayout.SOUTH);
     }
 
     private void initPanel () {
@@ -46,6 +59,24 @@ public class MineSweeper extends JFrame {
             }
         };
 
+        panel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                int x = e.getX()/IMAGE_SIZE;
+                int y = e.getY()/IMAGE_SIZE;
+                Coord coord = new Coord(x,y);
+                if (e.getButton() == MouseEvent.BUTTON1)
+                    game.pressLeftButton (coord);
+                if (e.getButton() == MouseEvent.BUTTON3)
+                    game.pressRightButton (coord);
+                if (e.getButton() == MouseEvent.BUTTON2)
+                    game.start ();
+                label.setText(getMessage());
+                panel.repaint();
+
+            }
+        });
+
         panel.setPreferredSize(new Dimension(
                 Ranges.getSize().x*IMAGE_SIZE ,
                 Ranges.getSize().y*IMAGE_SIZE ));
@@ -55,12 +86,14 @@ public class MineSweeper extends JFrame {
 
     private void initFrame ()
     {
-        pack();
+
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mine Sweeper");
-        setLocationRelativeTo(null);
+        //setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
+        pack();
+        setLocationRelativeTo(null);
         setIconImage(getImage("icon"));
     }
     private void setImages(){
@@ -78,5 +111,20 @@ public class MineSweeper extends JFrame {
 
     }
 
+    private String getMessage()
+    {
+        switch (game.getState())
+        {
+            case PLAYED: return "Think twice!!!";
+            case BOMBED: return "YOU LOSE!!!!";
+            case WINNER: return "Congratulations!";
+            default : return "Welcom";
+        }
+
+    }
+
+    //public void setMessage(String message) {
+     //   this.message = message;
+    //}
 }
 

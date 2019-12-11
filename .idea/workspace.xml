@@ -6,14 +6,40 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8677a727-39c1-42e4-8f78-d8b2bc059839" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sweeper/Matrix.java" afterDir="false" />
+    <list default="true" id="8677a727-39c1-42e4-8f78-d8b2bc059839" name="Default Changelist" comment="Update">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sweeper/Bomb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sweeper/Flag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sweeper/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/MineSweeper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/MineSweeper$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/MineSweeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/MineSweeper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Box.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Coord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Coord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Ranges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MineSweeper/sweeper/Ranges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/bomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/bombed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/flaged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/inform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/nobomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/num8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/opened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MineSweeper2/img/zero.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MineSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MineSweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Coord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Coord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sweeper/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sweeper/Ranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sweeper/Ranges.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,6 +59,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -102,10 +134,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
